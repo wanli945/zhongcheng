@@ -18,5 +18,10 @@ exports.useLogger = function (logger) {
     return log4js.connectLogger(logger || log4js.getLogger('default'), {
         //自定义输出格式
         format: '[:remote-addr :method :url  :status :response-timems][:referrer HTTP/:test.m-version :user-agent]'
+
+
+
+
+
     })
 };
